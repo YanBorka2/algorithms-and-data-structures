@@ -42,6 +42,17 @@ class Stack {
         }
         console.log("Елементи стеку:", this.items.join(", "));
     }
+
+
+    elelemetCalculete(){
+        let tempValue = 1;
+        this.items.forEach(element => {
+            if (element % 2) {
+               return tempValue *= element
+            }
+        });
+        console.log(tempValue)
+    }
 }
 
 
@@ -49,8 +60,10 @@ const stack = new Stack();
 
 
 stack.push(3);
-stack.push(42);
-stack.push(70);
+stack.push(5);
+stack.push(4);
+
+stack.elelemetCalculete ();
 
 stack.viewAllElement(); // Перегляд елементів
 
