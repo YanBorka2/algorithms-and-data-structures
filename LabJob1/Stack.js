@@ -55,7 +55,6 @@ class Stack {
     }
 }
 
-const ne22 = 2
 
 const stack = new Stack();
 
